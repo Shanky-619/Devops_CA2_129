@@ -28,7 +28,7 @@ pipeline {
   post {
     always {
       echo 'Build completed. Headless mode used for Jenkins execution.'
-      archiveArtifacts artifacts: 'tests/**/*.js', fingerprint: true
+      archiveArtifacts artifacts: '/*.js', fingerprint: true
     }
     success {
       echo 'Build successful: Selenium tests passed.'

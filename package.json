@@ -4,7 +4,7 @@
   "description": "Student feedback registration form with Selenium and Jenkins automation",
   "private": true,
   "scripts": {
-    "test:selenium": "node --test tests/selenium/form.test.js"
+    "test:selenium": "node --test form.test.js"
   },
   "dependencies": {
     "selenium-webdriver": "^4.41.0"

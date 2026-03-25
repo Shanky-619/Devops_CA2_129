@@ -5,7 +5,7 @@ const assert = require("node:assert/strict");
 const { Builder, By, Key, until } = require("selenium-webdriver");
 const chrome = require("selenium-webdriver/chrome");
 
-const formUrl = pathToFileURL(path.resolve(__dirname, "..", "..", "index.html")).href;
+const formUrl = pathToFileURL(path.resolve(__dirname,"index.html")).href;
 
 function buildDriver() {
   const runHeadless = process.env.HEADLESS === "true";
